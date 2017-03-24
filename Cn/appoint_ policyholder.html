@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>appoint_ policyholder</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link type="text/css" rel="stylesheet" href="../Css/style.css">
+
+</head>
+
+<body>
+<nav class="nav_wrap clearfix">
+    <button class="nav_btn">
+    	<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    预约签单 
+    <a href="" class="fr news_Icon bac"><span>99</span></a>
+</nav>
+<!-- 侧栏抽屉 -->
+<div class="grey_Wrap"></div>
+<section class="swiper-container navSort_wrap ">
+	<div class="swiper-slide h navSort_inner" >
+    	<div class="user_wrap clearfix">
+            <img class="fl" src="../Images/face.jpg">
+            <div class="user">
+                姓名X(123456)<br/> 
+                级别
+            </div>
+        </div>
+    	<div class="swiper-slide navSorts bac">
+        	<ul>
+            	<li><a href="">主页</a></li>
+                <li><a href="">产品库</a></li>
+                <li><a href="">资讯</a></li>
+                <li><a href="">出计划书</a></li>
+                <li><a href="">计划书管理</a></li>
+                <li><a href="">预约签单</a></li>
+                <li><a href="">预约管理</a></li>
+                <li><a href="">订单管理</a></li>
+            </ul>
+        </div>
+        <div class="back_wrap"><a href="javascript:void(0);">退出</a></div>
+    </div>
+</section>
+	
+    
+<section class="appoint_wrap">
+    <ul class="tit clearfix">
+        <li><a href="" style="border-left:none;">产品信息</a></li>
+        <li class="on"><a href="">投保人</a></li>
+        <li><a href="">受保人</a></li>
+        <li><a href="">其他信息</a></li>
+        <li><a href="">上传附件</a></li>
+    </ul>
+    <div class="appoint_data">
+    	<form action="https://www.baidu.com/" method="post" class="holderForm" name="holderForm">
+            <label><span class="redCo">*</span>投保人</label>
+            <input type="text" name="policyholder" required>
+            
+            <div class="add_customer">点击添加客户</div>
+            <div class="add_cusCon">
+            	<h2 class="clearfix">默认登录密码：123456<span class="close">X</span></h2>
+                <p>
+                    <label><span class="redCo">*</span>身份证号</label>
+                    <input type="text" name="idCard1" required>
+                    <label><span class="redCo">*</span>投保人姓名</label>
+                    <input type="text" name="pName1" required>
+                </p>
+            </div>
+            
+            <label><span class="redCo">*</span>投保人拼音</label>
+            <input type="text" name="spll" required>
+            
+            <label><span class="redCo">*</span>出生日期</label>
+            <input type="text" id="birth" class="birth" name="birth" required />  
+            
+            
+            <label><span class="redCo">*</span>性别</label>
+             <div class="radio_wrap clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" checked name="Hsex"> 男</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="Hsex"> 女</label>
+             </div>
+            <label><span class="redCo">*</span>与受保人关系</label>
+            <input type="text" name="relation" required >
+            
+            <label><span class="redCo">*</span>身份证号码</label>
+            <input type="text" name="idCard" required>
+            
+            <label><span class="redCo">*</span>护照/通行证号码</label>
+            <input type="text" name="passId" required>
+            
+            <label><span class="redCo">*</span>护照/通行证到期时间</label>
+            <input type="text" id="deadline" required>
+            
+            <label><span class="redCo">*</span>国籍</label>
+            <input type="text" required>
+            
+            
+            <label><span class="redCo">*</span>是否吸烟</label>
+            <div class="radio_wrap clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" checked name="smoke"> 是</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="smoke"> 否</label>
+             </div>
+            
+            <label><span class="redCo">*</span>身高cm</label>
+            <input type="text" required>
+            
+            <label><span class="redCo">*</span>体重kg</label>
+            <input type="text" required>
+            
+            <label><span class="redCo">*</span>婚姻状态</label>
+            <div class="radio_wrap col4 clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" checked name="marry"> 单身</label>
+                <label class="rad_opt fl "><input type="radio" value="1"  name="marry"> 已婚</label>
+                <label class="rad_opt fl "><input type="radio" value="2"  name="marry"> 离婚</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="3"  name="marry"> 丧偶</label>
+             </div>
+            
+            <label><span class="redCo">*</span>教育程度</label>
+            <div class="radio_wrap col3 clearfix">
+            	<label class="rad_opt fl  on"><input type="radio" value="0" checked name="edu"> 小学或以下</label>
+                <label class="rad_opt fl"><input type="radio" value="1"  name="edu"> 中学/预科</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="edu"> 大学或以上</label>
+             </div>
+           
+            <label><span class="redCo">*</span> 联系电话</label>
+            <input type="tel" equired>
+            
+            <label><span class="redCo">*</span> 电子邮箱</label>
+            <input type="email" name="email" required>
+            
+            <label><span class="redCo">*</span> 身份证地址</label>
+            <input type="text" required>
+            
+            <label><span class="redCo">*</span>是否以身份证为地址证明</label>
+            <div class="radio_wrap clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" checked name="confirm"> 是</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="confirm"> 否</label>
+             </div>
+            
+            
+            <label><span class="redCo">*</span> 通讯地址</label>
+            <input type="text" placeholder="（若与身份证不同城市必须提供地址证明）" required>
+            
+            <label><span class="redCo">*</span> 职务</label>
+            <input type="text" required>
+            
+            <label><span class="redCo">*</span> 职位</label>
+            <input type="text" required>
+            
+            <label><span class="redCo">*</span>公司名称</label>
+            <input type="text" required>
+            
+            <label><span class="redCo">*</span> 公司业务性质</label>
+            <input type="text" required>
+            
+            <label><span class="redCo">*</span>公司地址</label>
+            <input type="text" required>
+            
+            <label><span class="redCo">*</span> 受雇于现职年期</label>
+            <input type="text" required placeholder="如少于一年，请说明先前的工作">
+            
+            <label><span class="redCo">*</span> 月收入水平（港币）</label>
+            <input type="text" required>
+            
+            <label><span class="redCo">*</span>投保人是否为美国公民或税务居民？</label>
+            <div class="radio_wrap clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" checked name="confirm"> 是</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="confirm"> 否</label>
+             </div>
+            
+            <label><span class="redCo">*</span> 是否曾被拒保或加费投保？</label>
+            <div class="radio_wrap clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" checked name="Jor"> 是</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="Jor"> 否</label>
+             </div>
+            
+            <label><span class="redCo">*</span> 是否有投过其他香港保单？</label>
+            <div class="radio_wrap clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" checked name="xgbd"> 是</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="xgbd"> 否</label>
+             </div>
+            
+            <label><span class="redCo">*</span>受保人与投保人是否为同一人？ </label>
+            <div class="radio_wrap clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" checked name="identic"> 是</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="identic"> 否</label>
+             </div>
+            
+            
+            <input type="submit" value="下一步" id="holderForm">
+        </form>
+    </div>
+</section>
+</body>
+</html>
+<script src="../Js/zepto.min.js" type="text/javascript"></script>
+<script src="../Js/swiper-3.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../Js/layout.js"></script>
+<!--日期插件-->
+<script type="text/javascript" src="../Js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_002.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_004.js"></script>
+<link type="text/css" href="../Css/mobiscroll_002.css" rel="stylesheet">
+<link type="text/css" href="../Css/mobiscroll.css" rel="stylesheet">
+<script type="text/javascript" src="../Js/mobiscroll.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_003.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_005.js"></script>
+<link type="text/css" href="../Css/mobiscroll_003.css" rel="stylesheet">
+<script type="text/javascript">
+        $(function () {
+			var currYear = (new Date()).getFullYear();	
+			var opt={};
+			opt.date = {preset : 'date'};
+			opt.datetime = {preset : 'datetime'};
+			opt.time = {preset : 'time'};
+			opt.default = {
+				theme: 'android-ics light', //皮肤样式
+		        display: 'modal', //显示方式 
+		        mode: 'scroller', //日期选择模式
+				dateFormat: 'yyyy-mm-dd',
+				lang: 'zh',
+				showNow: true,
+				nowText: "今天",
+		        startYear: currYear - 10, //开始年份
+		        endYear: currYear + 10 //结束年份
+			};
+
+		  	$("#birth").mobiscroll($.extend(opt['date'], opt['default']));
+		  	$('#deadline').mobiscroll($.extend(opt['date'], opt['default']));
+		    
+        });
+    </script>
+

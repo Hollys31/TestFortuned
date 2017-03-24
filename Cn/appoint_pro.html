@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>appoint_pro</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link type="text/css" rel="stylesheet" href="../Css/style.css">
+</head>
+
+<body>
+<nav class="nav_wrap clearfix">
+    <button class="nav_btn">
+    	<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    预约签单 
+    <a href="" class="fr news_Icon bac"><span>99</span></a>
+</nav>
+<!-- 侧栏抽屉 -->
+<div class="grey_Wrap"></div>
+<section class="swiper-container navSort_wrap ">
+	<div class="swiper-slide h navSort_inner" >
+    	<div class="user_wrap clearfix">
+            <img class="fl" src="../Images/face.jpg">
+            <div class="user">
+                姓名X(123456)<br/> 
+                级别
+            </div>
+        </div>
+    	<div class="swiper-slide navSorts bac">
+        	<ul>
+            	<li><a href="">主页</a></li>
+                <li><a href="">产品库</a></li>
+                <li><a href="">资讯</a></li>
+                <li><a href="">出计划书</a></li>
+                <li><a href="">计划书管理</a></li>
+                <li><a href="">预约签单</a></li>
+                <li><a href="">预约管理</a></li>
+                <li><a href="">订单管理</a></li>
+            </ul>
+        </div>
+        <div class="back_wrap"><a href="javascript:void(0);">退出</a></div>
+    </div>
+</section>
+	
+    
+<section class="appoint_wrap">
+    <ul class="tit clearfix">
+        <li class="on"><a href="" style="border-left:none;">产品信息</a></li>
+        <li><a href="">投保人</a></li>
+        <li><a href="">受保人</a></li>
+        <li><a href="">其他信息</a></li>
+        <li><a href="">上传附件</a></li>
+    </ul>
+    <div class="appoint_data">
+    	<form action="https://www.baidu.com/" method="post" class="proForm" name="proForm">
+            <label><span class="redCo">*</span>产品公司</label>
+            <div class="sel_wrap">
+              <select name="Pcompany" class="Pcompany" required>
+              	<option></option>
+                <option>保诚</option>
+                <option>友邦</option>
+                <option>安盛</option>
+              </select><i class="bac"></i>
+            </div>
+            <label><span class="redCo">*</span>产品</label>
+            <div class="sel_wrap">
+              <select name="Pname" class="Pname" required>
+                <!--<option>保诚</option>-->
+              </select><i class="bac"></i>
+            </div>
+            <label><span class="redCo">*</span>子产品</label>
+            <div class="sel_wrap">
+              <select class="Pname_child" required>
+                <!--<option>保诚</option>-->
+              </select><i class="bac"></i>
+            </div>
+            <label><span class="redCo">*</span>缴费方式</label>
+            <div class="sel_wrap">
+              <select class="pPay" required>
+              	<!--<option>保诚</option>-->
+              </select><i class="bac"></i>
+            </div>
+            <label><span class="redCo">*</span>缴费年期</label>
+            <div class="sel_wrap">
+              <select class="ptime">
+              	<!--<option>保诚</option>-->
+              </select><i class="bac"></i>
+            </div>
+            <label><span class="redCo">*</span>年度缴费额</label>
+            <div class="radio_wrap clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" checked name="Ymoney"> USD</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="Ymoney"> HKD</label>
+            </div>
+            <label><span class="redCo">*</span>保额</label>
+            <div class="radio_wrap clearfix">
+            	<label class="rad_opt fl on"><input type="radio" value="0" name="Pmoney" checked> USD</label>
+                <label class="rad_opt fl bn_r"><input type="radio" value="1" name="Pmoney"> HKD</label>
+            </div>
+            <label><span class="redCo">*</span>上传计划书</label>
+            <div class="file_wrap">
+                <input type="file" accept="" class="upload_file" required>
+                <div class="file_bg">点击上传计划书</div>
+            </div>
+            <label><span class="redCo">*</span>赴港联系人</label>
+            <input type="text" required  class="connecter">
+            <label><span class="redCo">*</span>赴港联系方式</label>
+            <input type="text" required  class="connect_tel">
+            <label><span class="redCo">*</span>预约签单时间</label>
+            <input type="text" required class="connect_time" id="ordSign">
+            <input type="submit" value="下一步" id="proForm">
+        </form>
+    </div>
+</section>
+</body>
+</html>
+<script src="../Js/zepto.min.js" type="text/javascript"></script>
+<script src="../Js/swiper-3.3.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../Js/layout.js"></script>
+
+<!--日期插件-->
+<script type="text/javascript" src="../Js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_002.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_004.js"></script>
+<link type="text/css" href="../Css/mobiscroll_002.css" rel="stylesheet">
+<link type="text/css" href="../Css/mobiscroll.css" rel="stylesheet">
+<script type="text/javascript" src="../Js/mobiscroll.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_003.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_005.js"></script>
+<link type="text/css" href="../Css/mobiscroll_003.css" rel="stylesheet">
+<script type="text/javascript">
+        $(function () {
+			var currYear = (new Date()).getFullYear();	
+			var opt={};
+			opt.date = {preset : 'date'};
+			opt.datetime = {preset : 'datetime'};
+			opt.time = {preset : 'time'};
+			opt.default = {
+				theme: 'android-ics light', //皮肤样式
+		        display: 'modal', //显示方式 
+		        mode: 'scroller', //日期选择模式
+				dateFormat: 'yyyy-mm-dd',
+				lang: 'zh',
+				showNow: true,
+				nowText: "今天",
+		        startYear: currYear - 10, //开始年份
+		        endYear: currYear + 10 //结束年份
+			};
+
+		  	$("#ordSign").mobiscroll($.extend(opt['date'], opt['default']));
+		  	
+		    
+        });
+    </script>
+

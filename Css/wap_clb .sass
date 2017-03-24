@@ -1,0 +1,532 @@
+
+
+/* css 重置 */
+body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form { margin: 0; padding: 0; list-style: none; vertical-align: middle; font-weight:normal; font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif}
+img { border:0; margin: 0; padding: 0;   }
+body { color: #000; -webkit-user-select: none; -webkit-text-size-adjust: none; font-family:"Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif; text-align:left;   }
+header, section, footer { display: block; margin: 0; padding: 0 }
+a,a:hover{
+      text-decoration: none;
+    }
+li{
+  list-style-type: none;
+}
+
+//通用全局属性
+.wap_logo{
+  margin: 21px auto;
+  padding: 0 80px;
+  display: block;
+}
+.border{
+  border-radius: 5px;
+}
+.ztbj_padding{
+  padding: 0 30px;
+}
+
+//页面主色属性
+@background_zs: #9d8f6a;
+
+//登录全局属性
+@wap_srk_span_height: 9px;
+@wap_srk_font-size: 1.2rem;
+@wap_srk_padding_left_right:0.5rem;
+@wap_srk_padding_bottom:0.2rem;
+@wap_srk_emall_padding:0.2rem;
+.wap_srk{
+  color: #fff;
+  font-size: 1.2rem;
+  input{
+    width: 100%;
+    border:0;
+    padding: 0 @wap_srk_padding_left_right @wap_srk_padding_bottom;
+    background: transparent;
+  }
+  span{
+    display: block;
+    width: 100%;
+    height: @wap_srk_span_height;
+    margin-top: -@wap_srk_span_height;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
+.wap_login_zc{
+  font-size: 1.2rem;
+}
+
+//按钮全局属性
+.button{
+  text-align: center;
+  span{
+    a{
+      color: #fff;
+      width: 110px;
+      font-size: 1.3rem;
+      line-height: 24px;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid #fff;
+      transition-duration: .2s;
+      -moz-transition-duration: .2s;
+      -webkit-transition-duration: .2s;
+      -o-transition-duration: .2s;
+      .border;
+      &:hover{
+        background: @background_zs;
+        text-decoration: none;
+      }
+    }
+    display: inline-block;
+  }
+}
+//登录引导页
+.wap_login_yd_body{
+  background: url(../images/login/wap_login_bg.png) no-repeat #a89c7b center top;
+}
+@wap_button:1.3rem;
+.wap_login_yd{
+  .ztbj_padding;
+  .wap_logo_title{
+    margin: 0 auto 13px;
+    padding: 0 40px;
+    display: block;
+  }
+  h5{
+    font-size: 1.3rem;
+    width: 100%;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background: #625d51;
+    margin-bottom: 15px;
+  }
+  p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .button{
+    margin: 15px 0 10px;
+    span{
+      padding-bottom:22px;
+      border-bottom: 1px solid #fff;
+    }
+    i{
+      color: #fff;
+      font-style:normal;
+      padding-top: 34px;
+      display: inline-block;
+    }
+  }
+  .wap_login_zc{
+    text-align: center;
+    margin-bottom: 15px;
+    a{
+      color: #fff;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//登录页
+.wap_login_dl_body{
+  background: url(../images/login/wap_login_khdl_bg.png) no-repeat center top;
+}
+.wap_login_dl{
+  .ztbj_padding;
+  .wap_logo{
+    margin: 21px auto;
+  }
+  h5{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin: 23px 0 70px;
+    font-weight:bold;
+  }
+  .wap_srk{
+    margin-bottom: 80px;
+  }
+  .button{
+    margin: 60px 0 30px;
+    height: 27px;
+    i{
+      color: #fff;
+      font-style:normal;
+      padding-top: 21px;
+      display: inline-block;
+    }
+  }
+  .wap_login_zc{
+    text-align: center;
+    margin: 15px 0;
+    span{
+      padding-bottom: 3px;
+      border-bottom: 1px solid #fff;
+    }
+    a{
+      color: #fff;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//客户注册
+.wap_login_khzc{
+  .ztbj_padding;
+  .wap_logo{
+    margin: 21px auto;
+  }
+  h5{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin: 23px 0;
+    font-weight:bold;
+  }
+  .wap_srk{
+    margin-bottom: 20px;
+  }
+  .button{
+    margin: 30px 0 30px;
+    height: 27px;
+    i{
+      color: #fff;
+      font-style:normal;
+      padding-top: 21px;
+      display: inline-block;
+    }
+  }
+  .wap_login_zc{
+    text-align: center;
+    margin: 15px 0;
+    color: #fff;
+    span{
+      padding-bottom: 3px;
+      border-bottom: 1px solid #fff;
+    }
+    a{
+      color: #fff;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//理财师注册
+.wap_login_lcszc{
+  .ztbj_padding;
+  .wap_logo{
+    margin: 21px auto;
+  }
+  h5{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin: 23px 0;
+    font-weight:bold;
+  }
+  .wap_srk{
+    margin-bottom: 20px;
+    a{
+      color: #fff;
+      @margin-top:@wap_srk_font-size+@wap_srk_padding_left_right+@wap_srk_emall_padding+@wap_srk_padding_bottom;
+      font-size: @wap_srk_font-size;
+      line-height: @wap_srk_font-size;
+      margin-top: -@margin-top;
+      margin-right: @wap_srk_padding_left_right;
+      background: @background_zs;
+      padding: @wap_srk_emall_padding;
+      float: right;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .button{
+    margin: 30px 0 30px;
+    height: 27px;
+    i{
+      color: #fff;
+      font-style:normal;
+      padding-top: 21px;
+      display: inline-block;
+    }
+  }
+  .wap_login_zc{
+    text-align: center;
+    margin: 15px 0;
+    color: #fff;
+    span{
+      padding-bottom: 3px;
+      border-bottom: 1px solid #fff;
+    }
+    a{
+      color: #fff;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+//导航全局属性
+.clb_wap_nav_div{
+  border-bottom: 1px solid #aaaaaa;
+  .navbar{
+    min-height: 42px;
+    margin: 0px;
+  }
+  .wap_logo{
+    margin: 16px auto 0;
+    padding: 0;
+    width: 142px;
+    height: 9px;
+  }
+  .clb_wap_nav_icon_cf{
+    width: 15px;
+    height: 13px;
+    display: inline-block;
+    background: url(../images/tp/icon.png) no-repeat;
+    background-position: -253px -76px;
+    background-size: 640px 512px;
+    line-height: 42px;
+    margin-top: 14px;
+    float: left;
+  }
+  .clb_wap_nav_icon_tx{
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    background: url(../images/tp/icon.png) no-repeat;
+    background-position: -289px -30px;
+    background-size: 640px 512px;
+    line-height: 42px;
+    margin-top: 14px;
+    float: right;
+  }
+  h5{
+    margin: 0px auto;
+    width: 200px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 42px;
+  }
+}
+
+//侧边导航全局属性
+.clb_wap_nav_left{
+  @icon_width:18px;
+  background: #333333;
+  height: 100px;
+  color: #fff;
+  font-size: 15px;
+  .navbar{
+    width: 275px;
+    padding: 0 21px;
+    margin-bottom: 0;
+  }
+  .navbar-fixed-top{
+    height: 70px;
+    background: @background_zs;
+    img{
+      float: left;
+      width: 50px;
+      margin-top: 10px;
+    }
+    span{
+      width: 183px;
+      display: inline-block;
+      padding-left: 10px;
+      margin-top: 15px;
+    }
+  }
+  .navbar-fixed-bottom{
+    height: 45px;
+    min-height: 45px;
+    background: #626262;
+    img{
+      width: @icon_width;
+      display: inline-block;
+    }
+    span{
+      line-height: 45px;
+      padding-left: 10px;
+    }
+  }
+  .clb_wap_nav_left_body{
+    @line-height: 3rem;
+    padding: 83px 21px 45px 21px;
+    ul{
+      padding: 0;
+      li{
+        list-style-type:none;
+        line-height: @line-height;
+        a{
+          color: #fff;
+        }
+        img{
+          width: 17px;
+          display: inline-block;
+        }
+        span{
+          display: inline-block;
+          padding-left: 10px;
+          line-height: 1.2;
+        }
+        .fa{
+          float: right;
+          line-height: @line-height;
+        }
+      }
+      .panel{
+        margin:0;
+        border:0;
+        box-shadow:none;
+        border-radius:0;
+        background: transparent;
+        -webkit-box-shadow:none;
+      }
+      .clb_wap_nav_ej{
+        li{
+          line-height: 3rem;
+          a{
+            padding-left: 27px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slideBoxs{
+
+}
+
+
+//首页banner
+.slideBox {
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+  max-width: 640px;
+  .hd {
+    width: 100%;
+    height: 11px;
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    text-align: center;
+    ul {
+      display: inline-block;
+      padding: 3px 5px;
+      background-color: rgba(255, 255, 255, 0.7);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      font-size: 0;
+      vertical-align: top;
+      li {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background: #8C8C8C;
+        margin: 0 5px;
+        vertical-align: top;
+        overflow: hidden;
+      }
+      .on {
+        background: #fff;
+      }
+    }
+  }
+  .bd {
+    position: relative;
+    z-index: 0;
+    li {
+      position: relative;
+      text-align: center;
+      img {
+        vertical-align: top;
+        width: 100%; /* 图片宽度100%，达到自适应效果 */
+      }
+      a {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      .tit {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        text-indent: 10px;
+        height: 28px;
+        line-height: 28px;
+        color: #fff;
+        text-align: left;
+      }
+    }
+  }
+}
+//首页栏目分类
+.index_lm{
+  li {
+    line-height: 71px;
+    text-align: center;
+    border-top: 1px solid #aaa;
+    a {
+      color: #626262;
+    }
+  }
+}
+
+//产品栏目分类
+.cp_lm{
+  li {
+    position: relative;
+    img{
+      margin: 0 auto;
+    }
+    a {
+      top: 50%;
+      left: 50%;
+      color: #fff;
+      display: block;
+      position: absolute;
+      text-align: center;
+      @cp_lm_a_width:148px;
+      @cp_lm_a_height:26px;
+      width: @cp_lm_a_width;
+      line-height:@cp_lm_a_height;
+      margin-left: -@cp_lm_a_width / 2;
+      margin-top: -@cp_lm_a_height / 2;
+      border: 1px solid #fff;
+      &:hover{
+        background: @background_zs;
+        border: 1px solid  @background_zs;
+      }
+    }
+  }
+}
+
+//通用底部
+.wap_footer{
+  height: 32px;
+  line-height: 32px;
+  background: #eeeeee;
+  p{
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 0;
+  }
+}

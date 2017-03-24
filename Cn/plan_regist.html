@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>plan_regist</title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link type="text/css" rel="stylesheet" href="../Css/style.css">
+</head>
+
+<body>
+<nav class="nav_wrap clearfix">
+    <button class="nav_btn">
+    	<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    填写计划书登记表
+    <a href="" class="fr news_Icon bac"><span>99</span></a>
+</nav>
+<!-- 侧栏抽屉 -->
+<div class="grey_Wrap"></div>
+<section class="swiper-container navSort_wrap ">
+	<div class="swiper-slide h navSort_inner" >
+    	<div class="user_wrap clearfix">
+            <img class="fl" src="../Images/face.jpg">
+            <div class="user">
+                姓名X(123456)<br/> 
+                级别
+            </div>
+        </div>
+    	<div class="swiper-slide navSorts bac">
+        	<ul>
+            	<li><a href="">主页</a></li>
+                <li><a href="">产品库</a></li>
+                <li><a href="">资讯</a></li>
+                <li><a href="">出计划书</a></li>
+                <li><a href="">计划书管理</a></li>
+                <li><a href="">预约签单</a></li>
+                <li><a href="">预约管理</a></li>
+                <li><a href="">订单管理</a></li>
+            </ul>
+        </div>
+        <div class="back_wrap"><a href="javascript:void(0);">退出</a></div>
+    </div>
+</section>
+	
+    
+<section class="appoint_wrap">
+    <div class="appoint_data">
+    	<form action="https://www.baidu.com/" method="post" class="registForm" name="registForm">
+        	<div class="showTime showTime1">
+            	<div class="info_wrap">投保人资料</div>
+                <label><span class="redCo">*</span>投保人</label>
+                <input type="text" name="policyholder" required>
+                
+                <label><span class="redCo">*</span>性别</label>
+                 <div class="radio_wrap clearfix">
+                    <label class="rad_opt fl on"><input type="radio" value="0" checked name="Hsex"> 男</label>
+                    <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="Hsex"> 女</label>
+                 </div>
+                 
+                 <label><span class="redCo">*</span>出生日期</label>
+                 <input type="text" id="birthA" required>
+                
+                <label><span class="redCo">*</span>国籍</label>
+                <input type="text" required>
+                
+                <label><span class="redCo">*</span>居留城市</label>
+                <input type="text" name="stay_city" required>
+                
+                <label><span class="redCo">*</span>吸烟情况</label>
+                <div class="radio_wrap clearfix">
+                    <label class="rad_opt fl "><input type="radio" value="0"  name="smoke"> 吸烟</label>
+                    <label class="rad_opt fl on bn_r"><input type="radio" value="1" checked  name="smoke">  不吸烟</label>
+                 </div>
+                
+                <label><span class="redCo">*</span>受保人与投保人同一人</label>
+                <div class="radio_wrap clearfix same_state">
+                    <label class="rad_opt fl "><input type="radio" value="0"  name="Psame"> 是</label>
+                    <label class="rad_opt fl on bn_r"><input type="radio" value="1" checked  name="Psame"> 否</label>
+                 </div>
+             </div>
+             <div class="showTime showTime2">
+                 <div class="info_wrap" style=" margin-top:6%;">受保人资料</div>
+                 
+                 <label><span class="redCo">*</span>受保人</label>
+                 <input type="text" name="insurant" required>
+                 
+                 <label><span class="redCo">*</span>性别</label>
+                <div class="radio_wrap clearfix">
+                    <label class="rad_opt fl on"><input type="radio" value="0" checked name="Rsex"> 男</label>
+                    <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="Rsex"> 女</label>
+                 </div>
+                 
+                 <label><span class="redCo">*</span>出生日期</label>
+                 <input type="text" id="birthB" required>
+                 
+                 <label><span class="redCo">*</span>国籍</label>
+                <input type="text" required>
+                
+                <label><span class="redCo">*</span>居留城市</label>
+                <input type="text" required>
+            </div>
+            
+            <div class="showTime showTime3">
+                <div class="info_wrap" style=" margin-top:6%;">计划书资料</div>
+                
+                <label><span class="redCo">*</span>产品公司</label>
+                <div class="sel_wrap">
+                  <select name="Pcompany" class="Pcompany" required>
+                    <option></option>
+                    <option>保诚</option>
+                    <option>友邦</option>
+                    <option>安盛</option>
+                  </select><i class="bac"></i>
+                </div>
+                
+                <label><span class="redCo">*</span>产品</label>
+                <div class="sel_wrap">
+                  <select name="Pname" class="Pname" required>
+                    <!--<option>保诚</option>-->
+                  </select><i class="bac"></i>
+                </div>
+                <label><span class="redCo">*</span>子产品</label>
+                <div class="sel_wrap">
+                  <select class="Pname_child" required>
+                    <!--<option>保诚</option>-->
+                  </select><i class="bac"></i>
+                </div>
+                <label><span class="redCo">*</span>缴费方式</label>
+                <div class="sel_wrap">
+                  <select class="pPay" required>
+                    <option>年缴</option>
+                  </select><i class="bac"></i>
+                </div>
+                
+                <label><span class="redCo">*</span>年保费/总保额</label>
+                <div class="radio_wrap clearfix">
+                    <label class="rad_opt fl on"><input type="radio" value="0"  name="Ymoney">年保费</label>
+                    <label class="rad_opt fl bn_r"><input type="radio" value="1" checked  name="Ymoney"> 总保额</label>
+                </div>
+                
+                <div class="radio_wrap clearfix">
+                    <label class="rad_opt fl on"><input type="radio" value="0"name="AllNum" class="allNum"> USD</label>
+                    <label class="rad_opt fl bn_r"><input type="radio" value="1"  checked   name="AllNum" class="allNum"> HKD</label>
+                </div>
+                <input type="text" style="margin-top:3%;">
+                
+                <label><span class="redCo">*</span>是否有附加险</label>
+                <div class="radio_wrap control_wrap aa clearfix">
+                    <label class="rad_opt fl "><input type="radio" value="0" name="attach" class="attach"> 是</label>
+                    <label class="rad_opt fl on bn_r"><input type="radio" value="1"  checked   name="attach" class="attach"> 否</label>
+                </div>
+                <div class="fjxAdd dn">
+                	<label><span class="redCo">*</span>附加险说明</label>
+                	<textarea class="fjxText"></textarea>
+                </div>
+                
+                <label><span class="redCo">*</span>是否提取</label>
+                <div class="radio_wrap control_wrap bb clearfix">
+                    <label class="rad_opt fl "><input type="radio" value="0"  name="taken"> 是</label>
+                    <label class="rad_opt fl bn_r on"><input type="radio" value="1"  checked name="taken"> 否</label>
+                </div>
+                <div class="takenAdd dn">
+                	<label><span class="redCo">*</span>提取说明</label>
+                	<textarea class="takenText"></textarea>
+                </div>
+                
+                
+                <label><span class="redCo">*</span>是否添加高端医疗</label>
+                <div class="radio_wrap control_wrap cc clearfix">
+                    <label class="rad_opt fl "><input type="radio" value="0"  name="gdyl"> 是</label>
+                    <label class="rad_opt fl on bn_r"><input type="radio" value="1" checked  name="gdyl"> 否</label>
+                </div>
+                <div class="gdylAdd dn">
+                	<h2>高端医疗产品必填选项</h2>
+                    <label><span class="redCo">*</span>产品</label>
+                    <input type="text">
+                    
+                    <label><span class="redCo">*</span>保障区域</label>
+                    <input type="text">
+                    
+                    <label><span class="redCo">*</span> 保障级别</label>
+                    <input type="text">
+                    
+                    <label><span class="redCo">*</span> 自付额</label>
+                    <div class="radio_wrap  clearfix">
+                        <label class="rad_opt fl on"><input type="radio" value="0" checked name="AllNum"> USD</label>
+                        <label class="rad_opt fl bn_r"><input type="radio" value="1"  name="AllNum"> HKD</label>
+                    </div>
+                    <input type="text" style="margin-top:3%;">
+                </div>
+                
+                <label><span class="redCo">*</span>备注</label>
+                <textarea class="remark"></textarea>
+                
+                
+                <input type="submit" value="提交" id="registForm">
+                <input type="reset" value="重置">
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
+<script src="../Js/zepto.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../Js/layout.js"></script>
+<script>anima();</script>
+<!--日期插件-->
+<script type="text/javascript" src="../Js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_002.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_004.js"></script>
+<link type="text/css" href="../Css/mobiscroll_002.css" rel="stylesheet">
+<link type="text/css" href="../Css/mobiscroll.css" rel="stylesheet">
+<script type="text/javascript" src="../Js/mobiscroll.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_003.js"></script>
+<script type="text/javascript" src="../Js/mobiscroll_005.js"></script>
+<link type="text/css" href="../Css/mobiscroll_003.css" rel="stylesheet">
+<script type="text/javascript">
+        $(function () {
+			var currYear = (new Date()).getFullYear();	
+			var opt={};
+			opt.date = {preset : 'date'};
+			opt.datetime = {preset : 'datetime'};
+			opt.time = {preset : 'time'};
+			opt.default = {
+				theme: 'android-ics light', //皮肤样式
+		        display: 'modal', //显示方式 
+		        mode: 'scroller', //日期选择模式
+				dateFormat: 'yyyy-mm-dd',
+				lang: 'zh',
+				showNow: true,
+				nowText: "今天",
+		        startYear: currYear - 40, //开始年份
+		        endYear: currYear + 10 //结束年份
+			};
+
+		  	$("#birthA").mobiscroll($.extend(opt['date'], opt['default']));
+		  	$('#birthB').mobiscroll($.extend(opt['date'], opt['default']));
+			
+		    
+        });
+</script>
